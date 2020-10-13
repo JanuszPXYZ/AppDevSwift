@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AFF31054-CBB1-4352-8719-3C077A49A914"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE59A5F9-8667-4D96-A3B4-6A47310AEAD2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalityQuiz/ResultsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ResultsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FE59A5F9-8667-4D96-A3B4-6A47310AEAD2 - f550bd9c97b91aee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.responses.getter : Swift.Optional&lt;Swift.Array&lt;PersonalityQuiz.Answer&gt;&gt;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "FE59A5F9-8667-4D96-A3B4-6A47310AEAD2 - 5e4aa438961ed6da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.responses.setter : Swift.Optional&lt;Swift.Array&lt;PersonalityQuiz.Answer&gt;&gt;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "FE59A5F9-8667-4D96-A3B4-6A47310AEAD2 - 5832274d2875ddeb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.responses.modify : Swift.Optional&lt;Swift.Array&lt;PersonalityQuiz.Answer&gt;&gt;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "FE59A5F9-8667-4D96-A3B4-6A47310AEAD2 - 6a648da15bb241a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.responses.modify : Swift.Optional&lt;Swift.Array&lt;PersonalityQuiz.Answer&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "FE59A5F9-8667-4D96-A3B4-6A47310AEAD2 - 74a832d90f00bf18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PersonalityQuiz.ResultsViewController"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "FE59A5F9-8667-4D96-A3B4-6A47310AEAD2 - f09d2d6a5fe57df0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PersonalityQuiz.ResultsViewController&gt;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76615715-56B1-4E8A-84BD-66EBA919904E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalityQuiz/ResultsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ResultsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "76615715-56B1-4E8A-84BD-66EBA919904E - 3301e5c1a3b30a4c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.resultAnswerLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "76615715-56B1-4E8A-84BD-66EBA919904E - 4434525d4bad6eb8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.resultAnswerLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "76615715-56B1-4E8A-84BD-66EBA919904E - 55eb650b06717349"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.resultAnswerLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "76615715-56B1-4E8A-84BD-66EBA919904E - 357f3eb0b4a49e8d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.resultAnswerLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "76615715-56B1-4E8A-84BD-66EBA919904E - 74a832d90f00bf18"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PersonalityQuiz.ResultsViewController"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "322">
+               </Location>
+               <Location
+                  uuid = "76615715-56B1-4E8A-84BD-66EBA919904E - f09d2d6a5fe57df0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalityQuiz.ResultsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PersonalityQuiz.ResultsViewController&gt;"
+                  moduleName = "PersonalityQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/januszpolowczyk/Documents/SwiftProjects%20-%20AppDev%20w:Swift/Unit%203/Projects/PersonalityQuiz/PersonalityQuiz/ResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "800DCE41-7507-4F15-A062-57F9C35C9853"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalityQuiz/ResultsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
