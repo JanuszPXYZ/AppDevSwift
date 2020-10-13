@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BasicInteractions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1F-nu-a6P">
+                                <rect key="frame" x="20" y="108" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="setText:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="kdI-Wd-Tfa"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFc-GE-76f">
+                                <rect key="frame" x="174" y="150" width="66" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Set Text"/>
+                                <connections>
+                                    <action selector="testingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qaq-uJ-xRk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y03-2n-KL5">
+                                <rect key="frame" x="166" y="192" width="82" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Clear Text"/>
+                                <connections>
+                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvi-TE-kxV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODl-qi-p7J">
+                                <rect key="frame" x="73" y="265" width="268" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S1F-nu-a6P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="3Ac-Jg-6tE"/>
+                            <constraint firstItem="y03-2n-KL5" firstAttribute="top" secondItem="dFc-GE-76f" secondAttribute="bottom" constant="8" id="4Iq-lH-evF"/>
+                            <constraint firstItem="S1F-nu-a6P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5SW-pX-h0b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S1F-nu-a6P" secondAttribute="trailing" constant="20" id="CrD-Na-rTi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dFc-GE-76f" secondAttribute="trailing" constant="174" id="JXh-HB-cRB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S1F-nu-a6P" secondAttribute="bottom" constant="720" id="MAw-Xo-fAp"/>
+                            <constraint firstItem="ODl-qi-p7J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="Ng9-aU-N44"/>
+                            <constraint firstItem="dFc-GE-76f" firstAttribute="top" secondItem="S1F-nu-a6P" secondAttribute="bottom" constant="8" id="PEL-vU-P1L"/>
+                            <constraint firstItem="dFc-GE-76f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="Rhr-Pc-RPD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y03-2n-KL5" secondAttribute="bottom" constant="636" id="Wq1-6G-nA2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dFc-GE-76f" secondAttribute="bottom" constant="678" id="a5p-8Y-hlu"/>
+                            <constraint firstItem="y03-2n-KL5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="cAy-If-2ex"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ODl-qi-p7J" secondAttribute="bottom" constant="555" id="iS7-Co-wdc"/>
+                            <constraint firstItem="ODl-qi-p7J" firstAttribute="top" secondItem="y03-2n-KL5" secondAttribute="bottom" constant="39" id="mXG-Gf-sCn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y03-2n-KL5" secondAttribute="trailing" constant="166" id="obQ-z1-hCT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ODl-qi-p7J" secondAttribute="trailing" constant="73" id="uIq-1c-kmo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelToSet" destination="ODl-qi-p7J" id="Co4-Gx-bgP"/>
+                        <outlet property="setButton" destination="dFc-GE-76f" id="sZu-Oc-vdU"/>
+                        <outlet property="textField" destination="S1F-nu-a6P" id="L77-eL-Ui9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
