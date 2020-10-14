@@ -3,6 +3,7 @@
  
  Create a `Human` class with two properties: `name` of type `String`, and `age` of type `Int`. You'll need to create a memberwise initializer for the class. Initialize two `Human` instances.
  */
+// Adding a comment, because Git is going nuts and does not upload labs :(
 class Human: CustomStringConvertible, Equatable, Comparable, Codable {
     var name: String
     var age: Int
