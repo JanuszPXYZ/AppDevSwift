@@ -3,7 +3,8 @@ import UIKit
 
 class BookTableViewController: UITableViewController {
 
-    var books: [Book] = [Book(title: "Magic Mountain", author: "Thomas Mann", genre: "Fiction", length: "945")]
+    var books: [Book] = [Book(title: "Magic Mountain", author: "Thomas Mann", genre: "Fiction", length: "945"),
+                         Book(title: "Crime And Punishment", author: "Fyodor Dostoyevsky", genre: "Fiction", length: "750")]
     
     var bookArchiveURL: URL {
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!

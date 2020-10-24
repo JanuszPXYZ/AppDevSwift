@@ -9,7 +9,7 @@ class BookTableViewController: UITableViewController {
         static let editBookSegue = "EditBook"
     }
     
-    var books: [Book] = []
+    var books: [Book] = [Book(title: "Something Odd", author: "NoOne", genre: "Fiction", length: "999")]
     
     var bookArchiveURL: URL {
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!

@@ -34,7 +34,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mc5-dg-4QN">
                                                     <rect key="frame" x="37" y="0.0" width="377" height="46.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGf-ut-OQt">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGf-ut-OQt">
                                                             <rect key="frame" x="0.0" y="0.0" width="377" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="9J3-VA-ByM"/>
@@ -43,7 +43,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-62-yrb">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-62-yrb">
                                                             <rect key="frame" x="0.0" y="28" width="377" height="18.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
@@ -113,6 +113,9 @@
                                                     <rect key="frame" x="20" y="5" width="374" height="34.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="CSf-dg-9Rc" eventType="editingChanged" id="WNf-C7-Z8X"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -138,6 +141,9 @@
                                                     <rect key="frame" x="20" y="4" width="374" height="34.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="CSf-dg-9Rc" eventType="editingChanged" id="GAR-Su-LNF"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -163,6 +169,9 @@
                                                     <rect key="frame" x="20" y="5" width="374" height="34.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="CSf-dg-9Rc" eventType="editingChanged" id="1Tk-PM-q0c"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -188,6 +197,9 @@
                                                     <rect key="frame" x="20" y="4" width="374" height="34.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="CSf-dg-9Rc" eventType="editingChanged" id="2se-ac-YAV"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -221,6 +233,7 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="hq6-b4-Q7z" id="C3W-jc-4EX"/>
                         <outlet property="nameTextField" destination="TeE-n4-GZa" id="Zv4-GX-Lyl"/>
+                        <outlet property="saveButton" destination="w3I-p6-OnS" id="1bk-3O-SSt"/>
                         <outlet property="symbolTextField" destination="HMr-gn-zIr" id="j6U-tP-Tld"/>
                         <outlet property="usageTextField" destination="de9-3d-0yY" id="SUO-Pg-j8V"/>
                     </connections>

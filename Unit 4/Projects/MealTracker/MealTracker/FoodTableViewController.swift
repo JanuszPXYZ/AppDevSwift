@@ -11,7 +11,7 @@ import UIKit
 class FoodTableViewController: UITableViewController {
     
     var meals: [Meal] {
-        let breakfast = Meal(name: "Breakfast", food: [Food(name: "Sandwich with avocado", description: "Tasty sandwich with fresh avocado."), Food(name: "Scrambled eggs with orange juice", description: "Tasty scrambled eggs and a natural, fresh orange juice")])
+        let breakfast = Meal(name: "Breakfast", food: [Food(name: "Sandwich with avocado", description: "Tasty sandwich with fresh avocado."), Food(name: "Scrambled eggs with orange juice", description: "Tasty scrambled eggs and a natural, fresh orange juice"), Food(name: "Hot cocoa with a bacon hamburger", description: "Our hot cocoa with a bacon hamburger. Extremely good.")])
         let lunch = Meal(name: "Lunch", food: [Food(name: "Sushi tuna rolls", description: "Exquisite sushi rolls with fresh tuna."),
         Food(name: "Vegan Steak with french fries", description: "A vegan steak made from seitan with french fries."), Food(name: "Pizza", description: "Big pizza on a thin crust, served with a homemade tomato sauce.")])
         let dinner = Meal(name: "Dinner", food: [Food(name: "Spanish Tapas with red wine", description: "Small sandwiches served with regional Spanish wine"), Food(name: "Pasta with pesto", description: "Italian pasta with pesto.")])
@@ -43,6 +43,7 @@ class FoodTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath)
         let meal = meals[indexPath.section].food
+        
         let food = meal[indexPath.row].name
         let description = meal[indexPath.row].description
         
