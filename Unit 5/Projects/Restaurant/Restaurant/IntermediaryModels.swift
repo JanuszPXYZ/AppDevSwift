@@ -30,3 +30,15 @@ struct MenuItem: Codable {
 struct MenuItems: Codable {
     let items: [MenuItem]
 }
+
+struct Categories: Codable {
+    let categories: [String]
+}
+
+struct PreparationTime: Codable {
+    let prepTime: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case prepTime = "estimated_prep_time"
+    }
+}
