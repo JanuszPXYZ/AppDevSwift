@@ -11,13 +11,12 @@ import UIKit
 class MenuTableViewController: UITableViewController {
     var category: String! // This view SHOULD NOT ever be displayed without category data
     var menuItems = [MenuItem]()
-    let menuController = MenuController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = category.capitalized
-        menuController.fetchMenuItems(forCategory: category) { (menuItems) in
+        MenuController.shared.fetchMenuItems(forCategory: category) { (menuItems) in
             if let menuItems = menuItems {
                 self.updateUI(with: menuItems)
             }
@@ -54,9 +53,15 @@ class MenuTableViewController: UITableViewController {
     func configure(_ cell: UITableViewCell, forItemAt indexPath: IndexPath) {
         let items = menuItems[indexPath.row]
         cell.textLabel?.text = items.name
-        cell.detailTextLabel?.text = "\(items.price)"
+        cell.detailTextLabel?.text = String(format: "$%.2f", items.price)
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MenuDetailSegue" {
+            let destinationViewController = segue.destination as! MenuItemDetailViewController
+            let selectedIndex = tableView.indexPathForSelectedRow!.row
+            destinationViewController.menuItem = menuItems[selectedIndex]
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
