@@ -9,6 +9,8 @@
 import UIKit
 
 class OrderTableViewController: UITableViewController {
+    
+    var orderMinutes = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,31 +62,48 @@ class OrderTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
+    
+    @IBAction func submitOrderTapped(_ sender: UIBarButtonItem) {
+        let orderTotal = MenuController.shared.order.menuItems.reduce(0.0) { (result, menuItem) -> Double in
+            return result + menuItem.price
+            }
+        
+        let formattedOrder = String(format: "$%.2f", orderTotal)
 
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        let alert = UIAlertController(title: "Confirm Order", message: "You are about to submit your order with a total of \(formattedOrder)", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Submit", style: .default) { action in
+            self.uploadOrder()
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        
+        present(alert, animated: true, completion: nil)
+       }
+    
+    func uploadOrder() {
+        let menuIDs = MenuController.shared.order.menuItems.map { $0.id }
+        
+        MenuController.shared.submitOrder(forMenuIDs: menuIDs) { (minutes) in
+            DispatchQueue.main.async {
+                if let minutes = minutes {
+                    self.orderMinutes = minutes
+                    self.performSegue(withIdentifier: "ConfirmationSegue", sender: nil)
+                }
+            }
+        }
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    
+    @IBAction func unwindToOrderList(segue: UIStoryboardSegue) {
+        if segue.identifier == "DismissConfirmation" {
+            MenuController.shared.order.menuItems.removeAll()
+        }
     }
-    */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ConfirmationSegue" {
+            let orderConfirmationViewController = segue.destination as! OrderConfirmationViewController
+            orderConfirmationViewController.minutes = orderMinutes
+        }
     }
-    */
-
+    
 }

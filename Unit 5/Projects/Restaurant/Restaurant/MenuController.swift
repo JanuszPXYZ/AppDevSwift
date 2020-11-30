@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 
 class MenuController {
     let baseURL = URL(string: "http://192.168.1.149:8090/")!
@@ -60,14 +62,14 @@ class MenuController {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         // Next, we'll store the array of menu IDs in JSON under the key menuIds. To do this, we have to create a dictionary of type [String:[Int]], a type that can be converted to and from JSON by an instance of JSONDecoder:
-        let data: [String: [Int]] = ["menuIds": menuIds]
+        let data = ["menuIds": menuIds]
         let jsonEncoder = JSONEncoder()
         let jsonData = try? jsonEncoder.encode(data)
-        
-        
-        let jsonDecoder = JSONDecoder()
         request.httpBody = jsonData
+        
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let jsonDecoder = JSONDecoder()
+            
             if let data = data,
                 let preparationTime = try? jsonDecoder.decode(PreparationTime.self, from: data) {
                 completion(preparationTime.prepTime)
@@ -78,4 +80,15 @@ class MenuController {
         task.resume()
     }
     
+    func fetchImages(url: URL, completion: @escaping (UIImage?) -> Void) {
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let data = data,
+                let image = UIImage(data: data) {
+                completion(image)
+            } else {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
 }
